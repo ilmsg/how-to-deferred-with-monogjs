@@ -95,6 +95,8 @@ deferred มีจุดสำคัญง่ายๆ
 - ได้ข้อมูลที่ต้องการแล้วก็ใช้ deferred.resolve(data);
 - จบ block นึงแล้วก็ deferred.promise(); 
 
+เขียน function เอาไว้ให้ return ข้อมูลกลับมา
+
 	function getTable(collection){
 		var deferred = Deferred();
 		collection.find(function(err, doc){
